@@ -1,0 +1,53 @@
+main.c
+
+Ce code est juste pour démontrer comment vous pouvez traiter les options de ligne de commande,
+ chaque fonction appelée dans le switch doit être définie dans le fichier correspondant.
+
+Notez que les fonctions de bruteforce peuvent prendre beaucoup de temps à exécuter, 
+vous voudrez peut-être envisager d'utiliser des threads pour améliorer les performances.
+
+En ce qui concerne le mode interactif, vous pouvez utiliser ncurses pour créer une interface en mode texte. 
+ncurses est une bibliothèque pour manipuler l'affichage sur des terminaux en mode caractère.
+ Il vous permet de créer une interface utilisateur plus conviviale.
+
+Quant à l'interaction avec les fichiers zip, vous allez utiliser la bibliothèque libzip. 
+Vous devrez parcourir la documentation de la bibliothèque pour voir comment vous pouvez ouvrir, lire, écrire, extraire
+et ajouter des fichiers dans un fichier zip.
+
+Enfin, pour le bruteforce, la complexité dépend du nombre de caractères que vous voulez tester. 
+Une approche simple de bruteforce serait de tester toutes les combinaisons possibles de caractères, 
+mais cela peut prendre beaucoup de temps si le mot de passe est long. Une autre approche serait d'utiliser 
+un dictionnaire de mots de passe couramment utilisés, ce qui est souvent plus efficace.
+
+J'espère que cela vous donne une bonne idée de la façon dont vous pouvez structurer votre programme.
+
+
+zip_manager.c et bruteforce.c : 
+
+Il convient de noter que ces codes ne sont que des ébauches et ne contiennent pas toutes les fonctions nécessaires. 
+Vous devez ajouter d'autres fonctions pour extraire les fichiers du zip, ajouter des fichiers au zip, 
+et implémenter le mode interactif.
+
+En outre, vous devrez ajouter des vérifications de sécurité appropriées à votre code pour vous assurer qu'il est sûr d'ouvrir 
+les fichiers et qu'il ne cause pas de fuite de mémoire.
+Vous devriez également tester votre code soigneusement pour vous assurer qu'il fonctionne correctement dans tous les cas.
+
+Je vous recommande de lire la documentation des bibliothèques que vous utilisez pour comprendre comment les utiliser correctement.
+Pour libzip, vous pouvez trouver la documentation ici. Pour ncurses, vous pouvez trouver une introduction ici.
+
+
+interactive_mode.c : 
+
+D'accord, pour le fichier interactive_mode.c, vous pouvez utiliser ncurses pour construire une interface utilisateur interactive. 
+C'est un puissant outil pour créer des interfaces en mode texte, mais cela peut être un peu complexe 
+si vous n'êtes pas habitué à son fonctionnement.
+
+Je vais vous donner une structure de base pour commencer avec ncurses.
+ Notez que vous devrez remplir les fonctions avec les commandes correspondantes pour interagir avec vos fichiers zip.
+
+Le code ci-dessus initialisera une interface en mode texte où l'utilisateur peut interagir avec le programme 
+en tapant des commandes directement. Il affichera une liste d'actions disponibles et de fichiers/dossiers 
+que l'utilisateur peut choisir d'ouvrir, d'extraire ou de visiter. L'utilisateur peut quitter le programme en tapant 'q'.
+
+Encore une fois, ce code est juste un début et vous aurez besoin de le remplir avec les fonctions réelles pour interagir avec 
+les fichiers zip. Vous aurez également besoin de gérer les erreurs et les cas où l'utilisateur entre une commande invalide.
