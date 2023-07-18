@@ -1,17 +1,17 @@
-**Nom du projet : -**
+**Nom du projet :**
 CompreC
 
 **Description**
 Projet de C
 
-**Installation : **
+**Installation** :
 executer le binaire
 
 **Contribution**
 ChatGPT pour l'aide 
 
-**Licence : **
+**Licence**
 Licence MIT
 
-Auteurs
+**Auteurs**
 Axel et Mickael
